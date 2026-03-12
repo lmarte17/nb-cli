@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nb-cli"
+version = "0.1.0"
+description = "A NetBox CLI for operators, automation, and LLM/agent wrappers."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Luis Marte" },
+]
+keywords = ["netbox", "cli", "network", "dcim", "ipam", "automation"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: System Administrators",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: System :: Systems Administration",
+  "Topic :: Utilities",
+]
+dependencies = [
+  "pynetbox>=7.6.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/lmarte17/nb-cli"
+Repository = "https://github.com/lmarte17/nb-cli"
+Documentation = "https://github.com/lmarte17/nb-cli/blob/main/docs/command-reference.md"
+"Bug Tracker" = "https://github.com/lmarte17/nb-cli/issues"
+
+[project.scripts]
+nb-cli = "nb_cli.__main__:main"
+nbx = "nb_cli.__main__:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.4.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = [
+  "live: integration tests that require a reachable NetBox instance",
+]
