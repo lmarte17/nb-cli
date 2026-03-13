@@ -8,7 +8,8 @@ version = "0.1.0"
 description = "A NetBox CLI for operators, automation, and LLM/agent wrappers."
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
   { name = "Luis Marte" },
 ]
@@ -18,7 +19,6 @@ classifiers = [
   "Environment :: Console",
   "Intended Audience :: System Administrators",
   "Intended Audience :: Developers",
-  "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
