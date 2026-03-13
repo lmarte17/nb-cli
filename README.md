@@ -21,13 +21,13 @@
 ## Installation
 
 ```bash
-pip install nb-cli
+pip install nb-cli-tool
 ```
 
 Or with `uv`:
 
 ```bash
-uv pip install nb-cli
+uv pip install nb-cli-tool
 ```
 
 The console entry points are `nb-cli` and `nbx`.
