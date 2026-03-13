@@ -3,7 +3,7 @@ requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "nb-cli"
+name = "nb-cli-tool"
 version = "0.1.0"
 description = "A NetBox CLI for operators, automation, and LLM/agent wrappers."
 readme = "README.md"
